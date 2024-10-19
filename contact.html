@@ -1,0 +1,158 @@
+</div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive Website with Enhanced Preloader</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+    
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    
+        <!-- Main Content -->
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <img src="image/logo.png" alt="Website Logo" class="logo">
+                    <h1>Kicheko Africa Foundation</h1>
+                </div>
+    
+                <!-- Hamburger Icon -->
+                <div class="menu-icon" onclick="toggleMenu()">&#x22EE;</div>
+    
+                <!-- Navigation Menu -->
+                <ul class="menu">
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="objective.html">Objectives</a></li>
+                    <li><a href="updates.html">Updates</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Image Slider Start -->
+    
+        <div class="image-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="image/carousel-1.png" alt="Image 1">
+                    <div class="overlay">
+                        <div>
+                            <h1 class="o-words">Let's Bring Kicheko <br> to Africa</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="image/carousel-2.png" alt="Image 2">
+                    <div class="overlay">
+                        <div>
+                            <h1 class="o-words">Let's Bring Kicheko <br> to Africa</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="image/carousel-3.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div>
+                            <h1 class="o-words">Let's Bring Kicheko <br> to Africa</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow left" onclick="moveSlide(-1)">&#10094;</div>
+            <div class="arrow right" onclick="moveSlide(1)">&#10095;</div>
+        </div>
+        <!-- Image Slider -->
+          
+            <!-- Contact Start -->
+            <div class="heading">
+                <div class="dash">────────────</div>
+                <h1 class="about-tittle">Explore Our Contacts</h1>
+                <div class="dash">────────────</div>
+            </div>
+            <div class="map-container">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0198490014836!2d39.28292707367136!3d-6.8882255931107865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c3505c0ca28a3%3A0x9b5ab5939235c1be!2sKKKT%20Kijichi!5e0!3m2!1sen!2stz!4v1728983824650!5m2!1sen!2stz"
+                allowfullscreen=""
+                loading="lazy"
+                ></iframe>
+            </div>
+
+            <!-- Contact End -->
+
+            
+    
+    <hr>
+        <!--Footer Start-->
+        <footer class="ending">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Location: Butiama Street, Kijichi, Dar es Salaam - Tanzania</p>
+                <p><i class="fas fa-phone"></i> Contact: (255) 715 286 453</p>
+                <p><i class="fas fa-envelope"></i> Email: info@kichekoafricafoundation.co.tz</p>
+            </div>
+    
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    
+            </div>
+            <div class="container">
+                <p>&copy; 2024 Kicheko Africa Foundation. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+        <!-- JavaScript to handle preloader and menu -->
+        <script>
+            // Function to hide preloader after 5 seconds
+            window.addEventListener("load", function () {
+                const preloader = document.getElementById('preloader');
+                setTimeout(() => {
+                    preloader.classList.add('fade-out');
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                    }, 1000); // Matches the fade-out duration
+                }, 5000); // 5 seconds preloader time
+            });
+            
+    
+            // Function to toggle the menu visibility
+            function toggleMenu() {
+                const menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+            
+            let currentSlide = 0; const slides = document.querySelectorAll('.slide'); function showSlide(index) { slides.forEach(slide => slide.classList.remove('active')); if (index >= slides.length) { currentSlide = 0; } else if (index < 0) { currentSlide = slides.length - 1; } else { currentSlide = index; } slides[currentSlide].classList.add('active'); document.querySelector('.slider-container').style.transform = 'translateX(' + (-currentSlide * 100) + '%)'; } function moveSlide(direction) { showSlide(currentSlide + direction); } setInterval(() => { showSlide(currentSlide + 1); }, 5000); showSlide(currentSlide);
+    
+    
+    
+        </script>
+    
+    </body>
+    </html>
+    

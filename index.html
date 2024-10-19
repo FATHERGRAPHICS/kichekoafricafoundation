@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Website with Enhanced Preloader</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="image/logo.png" alt="Logo" class="preloader-logo">
+            <h1 class="preloader-title">Kicheko Africa Foundation</h1>
+            <div class="bouncing-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="image/logo.png" alt="Website Logo" class="logo">
+                <h1>Kicheko Africa Foundation</h1>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div class="menu-icon" onclick="toggleMenu()">&#x22EE;</div>
+
+            <!-- Navigation Menu -->
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="objective.html">Objectives</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Image Slider Start -->
+
+    <div class="image-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="image/carousel-1.png" alt="Image 1">
+                <div class="overlay">
+                    <div>
+                        <h1 class="o-words">Let's Bring Kicheko <br> to Africa</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image/carousel-2.png" alt="Image 2">
+                <div class="overlay">
+                    <div>
+                        <h1 class="o-words">Let's Bring Kicheko <br> to Africa</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image/carousel-3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div>
+                        <h1 class="o-words">Let's Bring Kicheko <br> to Africa</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow left" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="arrow right" onclick="moveSlide(1)">&#10095;</div>
+    </div>
+    <!-- Image Slider -->
+    
+
+    <!-- About Start -->
+
+    <div class="about">
+        <div class="about-main">
+            <div class="heading">
+                <div class="dash">───────</div>
+                <h1 class="about-tittle">About Us</h1>
+                <div class="dash">───────</div>
+                <h1 class="about-words">Welcome to Kicheko Africa Foundation</h1>
+            </div>
+            <div class="full">
+                <p class="mb-4">KICHEKO AFRICA FOUNDATION established to collaborate with local and foreign organizations, agencies and institutions and various communities to provide education and enthusiasm in helping them, strengthening and raising the systems of supporting their initiatives
+                    Community including Women and children are facing challenges such as employee's harassment and embracement, unemployment, lack of education, ignorance, lack of help from the community, health challenges, influence of peer groups, issues of violence gender and poor access to technology development, desperation and inequality in financial resources that are an obstacle on utilizing their potential for community development.</p>
+            </div>
+        </div>
+        
+
+        <div class="diagonal-grid">
+            <div class="diagonal-item">
+                <img src="image/about-1.jpg" alt="Image 1">
+            </div>
+            <div class="diagonal-item">
+                <img src="image/about-2.jpg" alt="Image 2">
+            </div>
+            <div class="diagonal-item">
+                <img src="image/about-3.jpg" alt="Image 3">
+            </div>
+            <div class="diagonal-item">
+                <img src="image/about-4.jpg" alt="Image 4">
+            </div>
+            <div class="diagonal-item">
+                <img src="image/about-4.jpg" alt="Image 4">
+            </div>
+            <div class="diagonal-item">
+                <img src="image/about-4.jpg" alt="Image 4">
+            </div>
+        </div>
+        
+</div>
+<!-- About End -->
+
+<div class="heading">
+    <div class="dash">────────────</div>
+    <h1 class="about-tittle">Kicheko Africa Foundation</h1>
+    <div class="dash">────────────</div>
+</div>
+
+<div class="objectives-container-full">
+    <div class="objective-card-full">
+        <i class="fas fa-eye"></i> <!-- Vision icon -->
+        <h3>Vision</h3>
+        <p>To be the leading provider of sustainable and innovative solutions in our industry. To have a productive society, that touches community lives and becomes a blessing, hope and comfort for others.</p>
+    </div>
+    <div class="objective-card-full">
+        <i class="fas fa-bullseye"></i> <!-- Mission icon -->
+        <h3>Mission</h3>
+        <p>To be the number one organization in providing education and enthusiasm in helping Community, touching their
+            lives and improving a good environment by teaching them to have a habit of self-reliance.</p>
+    </div>
+    <div class="objective-card-full">
+        <i class="fas fa-list-alt"></i> <!-- Objectives icon -->
+        <h3>Objectives</h3>
+        <p>1. To fight against gender harassment, humiliation and all forms of discrimination facing an employees in a work place.<br>2. Promote education to the community.</p>
+        <a href="#next-panel" class="forward-arrow">
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+</div>
+
+<div class="heading">
+    <div class="dash">────────</div>
+    <h1 class="about-tittle">Meet Our Team</h1>
+    <div class="dash">────────</div>
+</div>
+<div class="team-section">
+    <div class="team-container">
+        <div class="team-member">
+            <div class="team-img-container">
+                <img src="image/person.jpg" alt="Team Member 1">
+            </div>
+            <div class="team-info">
+                <h3>Sarah Mteule</h3>
+                <p>CEO & Founder</p>
+                <p class="bio">Sarah has over 15 years of experience leading teams and driving innovation in the organizations.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-img-container">
+                <img src="image/person.jpg" alt="Team Member 2">
+            </div>
+            <div class="team-info">
+                <h3>Judith</h3>
+                <p>Project Manager</p>
+                <p class="bio">Judith oversees the company's operations and ensures all processes run smoothly.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-img-container">
+                <img src="image/person.jpg" alt="Team Member 3">
+            </div>
+            <div class="team-info">
+                <h3>Sarah Mteule</h3>
+                <p>Marketing Director</p>
+                <p class="bio">Sarah leads our marketing team with creativity and a deep understanding of the market.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-img-container">
+                <img src="image/person.jpg" alt="Team Member 4">
+            </div>
+            <div class="team-info">
+                <h3>Judith</h3>
+                <p>Head of Product Development</p>
+                <p class="bio">Judith brings innovation and dedication to the forefront of our product development.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<hr>
+    <!--Footer Start-->
+    <footer class="ending">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Location: Butiama Street, Kijichi, Dar es Salaam - Tanzania</p>
+            <p><i class="fas fa-phone"></i> Contact: (255) 715 286 453</p>
+            <p><i class="fas fa-envelope"></i> Email: info@kichekoafricafoundation.co.tz</p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+        <div class="container">
+            <p>&copy; 2024 Kicheko Africa Foundation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to handle preloader and menu -->
+    <script>
+        // Function to hide preloader after 5 seconds
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.classList.add('fade-out');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 1000); // Matches the fade-out duration
+            }, 5000); // 5 seconds preloader time
+        });
+        
+
+        // Function to toggle the menu visibility
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+        
+        let currentSlide = 0; const slides = document.querySelectorAll('.slide'); function showSlide(index) { slides.forEach(slide => slide.classList.remove('active')); if (index >= slides.length) { currentSlide = 0; } else if (index < 0) { currentSlide = slides.length - 1; } else { currentSlide = index; } slides[currentSlide].classList.add('active'); document.querySelector('.slider-container').style.transform = 'translateX(' + (-currentSlide * 100) + '%)'; } function moveSlide(direction) { showSlide(currentSlide + direction); } setInterval(() => { showSlide(currentSlide + 1); }, 5000); showSlide(currentSlide);
+
+
+
+    </script>
+
+</body>
+</html>
